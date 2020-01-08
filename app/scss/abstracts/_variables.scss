@@ -2,10 +2,15 @@
 $yellow: rgb(255, 233, 67);
 $black: rgb(0, 0, 0);
 
-$primary: $yellow;
-$dark: $black;
+$primary-color: $yellow;
+$text-color: $black;
 
 /* --- Fonts --- */
 $default-font-size: 15px;
 $small-font-size: 12px;
 $medium-font-size: 18px;
+
+$default-font-family: 'Montserrat', sans-serif;
+
+/* --- Transitions --- */
+$transition-default-time: 0.3s;

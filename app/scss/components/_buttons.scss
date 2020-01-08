@@ -1,0 +1,27 @@
+.button {
+  display: inline-block;
+  font-size: 1.1em;
+  padding: 0.5em 1.6em;
+  border: 2px solid transparent;
+  transition: $transition-default-time;
+
+  &--search {
+    font-weight: 600;
+
+    &:hover {
+      color: lighten($text-color, 30%);
+    }
+  }
+
+  &--subscribe {
+    font-weight: 600;
+    font-size: 1.5em;
+    background-color: $primary-color;
+
+    &:hover {
+      background-color: rgb(255, 255, 255);
+      border: 2px solid $primary-color;
+      transform: scale(1.05);
+    }
+  }
+}
