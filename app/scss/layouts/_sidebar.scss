@@ -1,0 +1,23 @@
+.sidebar {
+  margin-right: 3em;
+
+  &__title {
+    text-transform: uppercase;
+    font-size: 1.55em;
+    letter-spacing: 0.2em;
+    margin: 3em 0 0;
+  }
+
+  &__article {
+    margin: 4em 0;
+
+    .article__category {
+      font-size: 0.9em;
+    }
+
+    .article__title {
+      text-transform: uppercase;
+    }
+  }
+}
+
