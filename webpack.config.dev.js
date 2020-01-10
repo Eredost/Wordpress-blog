@@ -66,6 +66,18 @@ let config = {
           }
         ]
       },
+      // Fonts
+      {
+        test: /\.(woff(2)?|ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+        use: {
+          loader: 'file-loader',
+          options: {
+            name: '[name].[ext]',
+            outputPath: 'fonts/',
+            publicPath: '../fonts'
+          }
+        },
+      },
     ]
   },
   // Configuration du serveur de développement qui rechargera automatiquement les contenus lors d'un changement
