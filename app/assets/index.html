@@ -10,90 +10,126 @@
 </head>
 <body>
 
-    <div class="page">
+    <div class="wrapper">
 
         <header class="header">
+            <div class="header__content">
+                <div class="logo">
+                    <a href="" class="logo__text">Blog</a>
+                    <div class="logo__baseline">Un simple blog</div>
+                </div>
 
-            <div class="header__logo">
-                <h1 class="logo--title">Blog</h1>
-                <span class="logo--brand">Un simple blog</span>
+                <nav class="main-nav">
+                    <ul>
+                        <li>
+                            <a href="#">Catégories</a>
+                        </li>
+                        <li>
+                            <a href="#">A propos</a>
+                        </li>
+                        <li>
+                            <a href="#">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
 
-            <nav class="header__nav">
-                <ul class="links">
-                    <li class="link"><a href="#" class="link__anchor">Catégories</a></li>
-                    <li class="link"><a href="#" class="link__anchor">A propos</a></li>
-                    <li class="link"><a href="#" class="link__anchor">Contact</a></li>
-                </ul>
-            </nav>
-
-            <div class="header__more">
-                <a href="#" class="button button--search">
-                    <i class="fa fa-search" aria-hidden="true"></i>
-                    Rechercher
+            <div class="header__tools">
+                <div class="search">
+                    <form action="" class="search__form">
+                        <label for="search" class="search__form__label">
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                        </label>
+                        <input type="text" name="search" id="search" class="search__form__input" placeholder="Rechercher">
+                    </form>
+                </div>
+                <a href="" class="action-button">
+                    S'abonner
                 </a>
-                <a href="#" class="button button--subscribe">S'abonner</a>
             </div>
         </header>
 
-        <div class="grid">
+        <main class="main">
+            <article class="post">
+                <h1 class="post__title">
+                    <span>
+                        Five reasons to visit Lviv, Ukraine
+                    </span>
+                </h1>
+
+                <img src="https://source.unsplash.com/700x700/?city-black-and-white" alt="city" class="post__image">
+
+                <div class="post__meta">
+                    2d ago &bull; by Earl Eliott
+                </div>
+
+                <div class="post__content">
+                    <p>Forever promising to become the next Prague or Krakow, this million-strong Austro-Hungarian gem, packed with a millenium of churches, a huddle of beam-perfumed coffee houses and Eastern Europe's quirkiest bunch of restaurants, has been on the verge of bursting onto the international tourism stage for decades...</p>
+                </div>
+
+
+            </article>
             <aside class="sidebar">
                 <h2 class="sidebar__title">Latest</h2>
-                <div class="sidebar__article">
-                    <h3 class="article__category">Explorer</h3>
-                    <p class="article__title">
-                        Rapa nui is remote.And there there's its isolated north coast
-                    </p>
+
+                <div class="archive">
+                    <h3 class="archive__title">Explorer</h3>
+                    <div class="archive__content">
+                        <p>
+                            <a href="#">Rapa nui is remote.And there there's its isolated north coast</a>
+                        </p>
+                    </div>
                 </div>
-                <div class="sidebar__article">
-                    <h3 class="article__category">Travel tips</h3>
-                    <p class="article__title">
-                        How to make holiday travel less stressfull
-                    </p>
+
+                <div class="archive">
+                    <h3 class="archive__title">Travel tips</h3>
+                    <div class="archive__content">
+                        <p>
+                            <a href="#">How to make holiday travel less stressfull</a>
+                        </p>
+                    </div>
                 </div>
-                <div class="sidebar__article">
-                    <h3 class="article__category">Places</h3>
-                    <p class="article__title">
-                        48 hours in Toronto
-                    </p>
+
+                <div class="archive">
+                    <h3 class="archive__title">Places</h3>
+                    <div class="archive__content">
+                        <p>
+                            <a href="#">48 hours in Toronto</a>
+                        </p>
+                    </div>
                 </div>
-                <div class="sidebar__article">
-                    <h3 class="article__category">Pursuits</h3>
-                    <p class="article__title">
-                        Keeping the fire of Irish lighthouses alive
-                    </p>
+
+                <div class="archive">
+                    <h3 class="archive__title">Pursuits</h3>
+                    <div class="archive__content">
+                        <p>
+                            <a href="#">Keeping the fire of Irish lighthouses alive</a>
+                        </p>
+                    </div>
                 </div>
             </aside>
+        </main>
 
-            <section class="front-article">
-                <h3 class="front-article__title"><a href="#" class="front-article__title--link">Five reasons to visit Lviv, Ukraine</a></h3>
-                <img src="images/lviv-ukraine.jpg" alt="" class="front-article__image">
-                <div class="front-article__resume">
-                    <p class="resume__date">2d ago by Earl Elliot</p>
-                    <p class="resume__text">
-                        Forever promising to become the next Prague or Krakow, this million-strong Austro-Hungarian gem, packed with a millenium of churches, a huddle of beam-perfumed coffee houses and Eastern Europe's quirkiest bunch of restaurants, has been on the verge of bursting onto the international tourism stage for decades...
-                    </p>
-                </div>
-            </section>
-        </div>
+        <footer class="footer">
+
+            <div class="social-nav">
+                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            </div>
+
+            <div class="sign">
+                <a href="#"><i class="fa fa-circle-o" aria-hidden="true"></i></a>
+            </div>
+
+            <div class="copyright">
+                <div class="copyright__title">Blog</div>
+                <p class="copyright__text">&copy; 2019 - The Demo blog for students</p>
+            </div>
+
+        </footer>
+
     </div>
-
-    <footer class="footer">
-        <div class="social-medias">
-            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-        </div>
-
-        <div class="footer__logo">
-            <a href="#"><i class="fa fa-circle-o" aria-hidden="true"></i></a>
-        </div>
-
-        <div class="footer__copyrights">
-            <h3 class="copyrights__brand">Blog</h3>
-            <p class="copyrights__details">copyright 2017 - The Demo Blog for students</p>
-        </div>
-    </footer>
 
     <script src="../js/app.js"></script>
 </body>

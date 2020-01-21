@@ -4,20 +4,5 @@
   'abstracts/variables';
 
 @import
+  '~reset-css/sass/reset',
   '~font-awesome/scss/font-awesome';
-
-@import
-  'base/base';
-
-@import
-  'layouts/page',
-  'layouts/header',
-  'layouts/grid',
-  'layouts/sidebar',
-  'layouts/front-article',
-  'layouts/footer';
-
-@import
-  'components/buttons';
-
-@import 'shame';
