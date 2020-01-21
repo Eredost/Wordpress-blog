@@ -6,3 +6,26 @@
 @import
   '~reset-css/sass/reset',
   '~font-awesome/scss/font-awesome';
+
+@import
+  'base/base';
+
+@import
+  'layouts/header',
+  'layouts/sidebar',
+  'layouts/main',
+  'layouts/footer';
+
+@import
+  'components/logo',
+  'components/main_nav',
+  'components/search',
+  'components/action-button',
+  'components/post',
+  'components/archive',
+  'components/social-nav',
+  'components/sign',
+  'components/copyright';
+
+@import
+  'shame';
