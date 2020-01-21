@@ -1,4 +1,21 @@
 // Font-Awesome
 // --------------------
-
 $fa-font-path: '~font-awesome/fonts';
+
+// Colors
+// --------------------
+$yellow: #FFEC00;
+$black: rgb(28, 29, 31);
+$white:  #F6F7F9;
+
+$main-color: $yellow;
+$bg-color: $white;
+$text-color: $black;
+
+// Fonts
+// --------------------
+$default-font-size: 16px;
+$medium-font-size: 18px;
+
+$font-family: 'Montserrat', sans-serif;
+$font-family-fallback: 'Helvetica', Arial, sans-serif;

@@ -1,0 +1,16 @@
+.main-nav {
+  margin-left: 3em;
+
+  li {
+    display: inline-block;
+
+    a {
+      font-weight: 500;
+      margin: 0 1em;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

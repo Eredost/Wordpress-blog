@@ -1,0 +1,39 @@
+.post {
+  position: relative;
+
+  &__title {
+    padding-top: 1em;
+    font-size: 3em;
+    font-weight: 700;
+    width: 75%;
+
+    span {
+      background: linear-gradient(to bottom, transparent 0%, transparent 72%, $main-color 73%, $main-color 85%, transparent 86%);
+    }
+  }
+
+  &__image {
+    border-radius: 50%;
+    width: 50%;
+    max-width: 400px;
+    position: absolute;
+    top: 15px;
+    right: 0;
+    left: 50%;
+    z-index: -1;
+  }
+
+  &__meta {
+    font-size: 0.8em;
+    font-style: italic;
+    color: lighten($text-color, 15%);
+    margin-top: 1.5em;
+  }
+
+  &__content {
+    margin-top: 2em;
+    margin-left: 3%;
+    max-width: 40%;
+    line-height: 2em;
+  }
+}
