@@ -17,7 +17,8 @@
     "minimum-stability": "dev",
     "require": {
         "johnpbloch/wordpress": "*",
-        "wpackagist-theme/twentytwenty": "*"
+        "wpackagist-theme/twentytwenty": "*",
+        "wpackagist-plugin/hello-dolly":"*"
     },
     "extra": {
         "wordpress-install-dir": "wp",

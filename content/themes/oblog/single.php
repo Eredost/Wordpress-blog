@@ -1,3 +1,11 @@
 <?php
+get_header();
 
-echo "Je suis un template darticle";
+if (have_posts()) :
+    while (have_posts()) :
+        the_post();
+        get_template_part('template-parts/article/article-detail');
+    endwhile;
+endif;
+
+get_footer();

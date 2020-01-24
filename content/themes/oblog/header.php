@@ -1,23 +1,23 @@
 <!doctype html>
-<html lang="fr">
+<html <?php language_attributes(); ?>>
 <head>
-    <meta charset="UTF-8">
+    <meta charset="<?php bloginfo('charset'); ?>">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="content/themes/oblog/public/css/style.css">
-    <title>Blog</title>
+    <link rel="stylesheet" href="<?= get_theme_file_uri('public/css/style.css') ?>">
+    <title><?php bloginfo('name'); ?> - <?php bloginfo('description'); ?></title>
     <?php wp_head(); ?>
 </head>
-<body>
+<body <?php body_class(); ?>>
 
 <div class="wrapper">
 
     <header class="header">
         <div class="header__content">
             <div class="logo">
-                <a href="" class="logo__text">Blog</a>
-                <div class="logo__baseline">Un simple blog</div>
+                <a href="" class="logo__text"><?php bloginfo('name'); ?></a>
+                <div class="logo__baseline"><?php bloginfo('description'); ?></div>
             </div>
 
             <nav class="main-nav">

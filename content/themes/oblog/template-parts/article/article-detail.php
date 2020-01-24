@@ -1,10 +1,8 @@
-<article <?php post_class('post'); ?>>
+<article <?php post_class('post'); ?> style="width: 100%;">
     <h1 class="post__title">
-        <a href="<?php the_permalink(); ?>">
             <span>
                 <?php the_title(); ?>
             </span>
-        </a>
     </h1>
 
     <img src="https://source.unsplash.com/700x700/?city-black-and-white" alt="city" class="post__image">
@@ -14,8 +12,6 @@
     </div>
 
     <div class="post__content">
-        <p><?php the_excerpt(); ?></p>
-
-        <a href="<?php the_permalink(); ?>">Lire la suite</a>
+        <p><?php the_content(); ?></p>
     </div>
 </article>

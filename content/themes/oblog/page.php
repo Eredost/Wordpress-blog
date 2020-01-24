@@ -1,3 +1,11 @@
 <?php
+get_header();
 
-echo "je suis le template de page";
+if (have_posts()) :
+    while (have_posts()) :
+        the_post();
+        get_template_part('template-parts/page/content');
+    endwhile;
+endif;
+
+get_footer();
