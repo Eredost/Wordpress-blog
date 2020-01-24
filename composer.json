@@ -1,0 +1,29 @@
+{
+    "name": "eredost/wp-composer-pattern",
+    "description": "This project allows a faster installation of Wordpress thanks to the Composer dependency manager",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Eredost",
+            "email": "michael.coutin62@gmail.com"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://wpackagist.org"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "johnpbloch/wordpress": "*",
+        "wpackagist-theme/twentytwenty": "*"
+    },
+    "extra": {
+        "wordpress-install-dir": "wp",
+        "installer-paths": {
+            "content/themes/{$name}/": ["type:wordpress-theme"],
+            "content/plugins/{$name}/": ["type:wordpress-plugin"]
+        }
+    }
+}
