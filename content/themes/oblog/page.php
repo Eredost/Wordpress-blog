@@ -8,4 +8,6 @@ if (have_posts()) :
     endwhile;
 endif;
 
+dynamic_sidebar('Widget');
+
 get_footer();

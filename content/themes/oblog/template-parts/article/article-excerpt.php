@@ -7,7 +7,14 @@
         </a>
     </h1>
 
-    <img src="https://source.unsplash.com/700x700/?city-black-and-white" alt="city" class="post__image">
+    <!-- <img src="<?php //the_post_thumbnail_url(); ?>" alt="city" class="post__image"> -->
+    <?php
+    the_post_thumbnail('post-thumbnail', [
+        'class' => 'post__image',
+        'title' => 'city',
+        'sizes' => null,
+    ]);
+    ?>
 
     <div class="post__meta">
         <?php the_date(); ?> &bull; by <?php the_author(); ?>

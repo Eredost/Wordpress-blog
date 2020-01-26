@@ -5,8 +5,6 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="<?= get_theme_file_uri('public/css/style.css') ?>">
-    <title><?php bloginfo('name'); ?> - <?php bloginfo('description'); ?></title>
     <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
@@ -21,17 +19,12 @@
             </div>
 
             <nav class="main-nav">
-                <ul>
-                    <li>
-                        <a href="#">Catégories</a>
-                    </li>
-                    <li>
-                        <a href="#">A propos</a>
-                    </li>
-                    <li>
-                        <a href="#">Contact</a>
-                    </li>
-                </ul>
+                <?php
+                wp_nav_menu([
+                    'theme_location' => 'main',
+                    'container'      => null,
+                ])
+                ?>
             </nav>
         </div>
 

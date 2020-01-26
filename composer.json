@@ -14,11 +14,12 @@
             "url": "https://wpackagist.org"
         }
     ],
-    "minimum-stability": "dev",
     "require": {
         "johnpbloch/wordpress": "*",
         "wpackagist-theme/twentytwenty": "*",
-        "wpackagist-plugin/hello-dolly":"*"
+        "wpackagist-plugin/hello-dolly":"*",
+        "wpackagist-plugin/simply-show-hooks": "^1.2",
+        "wpackagist-plugin/what-the-file": "^1.5"
     },
     "extra": {
         "wordpress-install-dir": "wp",
